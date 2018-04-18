@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/banner" />
+                <!--
+                <ImageView
+                    android:id="@+id/ivTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp200"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/bg1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp100"
+                        android:layout_height="@dimen/dp100"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/bg2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:text="欢迎登录阀门商城"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/dp22"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+-->
+                <TextView
+                    android:id="@+id/tvRegist"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp32"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="@dimen/dp12"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/bg_regist"
+                    android:gravity="center"
+                    android:text="注册"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dp12" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp40"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp14"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/iconfont_shouji" />
+
+
+                <LinearLayout
+                    android:id="@+id/lvSelectAreaNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvAreaNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+86"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/dp16" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp10"
+                        android:layout_height="@dimen/dp5"
+                        android:layout_marginLeft="@dimen/dp2"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/arrow_down" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/dp14"
+                    android:layout_marginLeft="@dimen/dp4"
+                    android:background="#999999" />
+
+
+                <EditText
+                    android:id="@+id/editPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp12"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="请输入手机号码"
+
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="#666666"
+                    android:textColorHint="#999999"
+                    android:textSize="@dimen/dp16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp6"
+                android:background="#999999" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp16"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/lock" />
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/dp16"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:background="#999999" />
+
+
+                <EditText
+                    android:id="@+id/editPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp12"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="请输入登录密码"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="#666666"
+                    android:textColorHint="#999999"
+                    android:textSize="@dimen/dp16" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rlOpenEye"
+                    android:layout_width="@dimen/dp40"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ivEye"
+                        android:layout_width="@dimen/dp14"
+                        android:layout_height="@dimen/dp10"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp12"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/eye_open" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp8"
+                android:background="#999999" />
+
+
+            <TextView
+                android:id="@+id/tvForgetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="忘记密码?"
+                android:textColor="#666666"
+                android:textSize="@dimen/dp14" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp46"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginRight="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/bg_login"
+                android:text="登录"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dp20" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:layout_weight="1"
+                    android:background="#999999" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他登录方式"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/dp14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_weight="1"
+                    android:background="#999999" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp30"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp12"
+                android:paddingRight="@dimen/dp12">
+
+                <LinearLayout
+                    android:id="@+id/lvQQLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|bottom"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivQQ"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp32"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/qq" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="QQ"
+                        android:textSize="@dimen/dp14" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lvWechatLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|bottom"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivWechat"
+                        android:layout_width="@dimen/dp32"
+                        android:layout_height="@dimen/dp26"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/wechat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微信"
+                        android:textSize="@dimen/dp14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lvWeiBoLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|bottom"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivWeibo"
+                        android:layout_width="@dimen/dp32"
+                        android:layout_height="@dimen/dp28"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/weibo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微博"
+                        android:textSize="@dimen/dp14" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

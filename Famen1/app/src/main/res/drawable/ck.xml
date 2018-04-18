@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:drawable="@drawable/zhuce" android:state_checked="true"></item>
+
+    <item android:state_checked="false">
+        <shape android:shape="rectangle">
+            <stroke android:width="1px" android:color="#666666"/>
+        </shape>
+    </item>
+
+</selector>

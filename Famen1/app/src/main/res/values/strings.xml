@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Famen</string>
+
+
+    <string-array name="areanumber">
+        <item>+86</item><!--中国-->
+        <item>852</item><!--香港-->
+        <item>886</item><!--台湾-->
+        <item>00</item><!--国外-->
+    </string-array>
+</resources>
